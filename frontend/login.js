@@ -9,7 +9,7 @@ document.querySelector('#register').addEventListener('click', function () {
         email: registerEmail,
         password: registerPassword
     }
-    fetch('http://localhost:3000/users/signup', {
+    fetch('https://weatherappback-wine.vercel.app/users/signup', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(body)
@@ -30,7 +30,7 @@ document.querySelector('#connection').addEventListener('click', function () {
         email: registerEmail,
         password: registerPassword
     }
-    fetch('http://localhost:3000/users/signin', {
+    fetch('https://weatherappback-wine.vercel.app/users/signin', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(body)
